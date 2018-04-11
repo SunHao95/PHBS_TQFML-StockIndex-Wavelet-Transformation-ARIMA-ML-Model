@@ -23,16 +23,16 @@
 
 ## Data Description
   The datas selected are the daily stock index data of 000300.SH representing the large-cap stocks and 000905.SH representing medium-and-small-cap stocks, including,
-  *__Open__: Open price
-  *__High__: Highest daily price
-  *__Low__: Lowest daily price
-  *__Volume__: Trading volume
-  *__AMT__: Trading amount
+  * __Open__: Open price
+  * __High__: Highest daily price
+  * __Low__: Lowest daily price
+  * __Volume__: Trading volume
+  * __AMT__: Trading amount
   
-  Time range: 2010-01-01 to 2018-03-30
+  * Time range: 2010-01-01 to 2018-03-30
   
   
   
  ## Arangement
- Try best to use both models to make predictions. At least use one of them.
- Try to design a trading strategy based on the stock index prediction result.
+* Try best to use both models to make predictions. At least use one of them.
+* Try to design a trading strategy based on the stock index prediction result.
