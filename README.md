@@ -28,8 +28,7 @@
   * __Low__: Lowest daily price
   * __Volume__: Trading volume
   * __AMT__: Trading amount
-  
-  * Time range: 2010-01-01 to 2018-03-30
+  * __Time range__: 2010-01-01 to 2018-03-30
   
   
   
