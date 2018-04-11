@@ -1,2 +1,5 @@
 # PHBS_TQFML-Project
-PHBS 2018 Machine Learning Class Project
+
+## Stock Index Prediction based on Wavelet Transformation and ARIMA-ML Model or TEA-ML Model
+
+## Data Description
