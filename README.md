@@ -10,8 +10,8 @@
   
   
 * Two triable methods to achieve the goal.
-  Firstly, the ARIMA-ML(Autoregressive Integrated Moving Average and Machine Learning) Model
-  Secondly, the TEA-ML(Technical Analysis and Machine Learning) Model
+  * Firstly, the ARIMA-ML(Autoregressive Integrated Moving Average and Machine Learning) Model
+  * Secondly, the TEA-ML(Technical Analysis and Machine Learning) Model
   
 * ### ARIMA-ML Model 
   After wavelet transformation, there are two types of stock index data, low-frequency and high-frequency. The ARIMA-ML model is trying to  using ARIMA method to predict the high-frequency data, since high-frequency is stationary, while ML methods, such as SVM(Support Vector Machine)，are trying to predict the low-frequency data. Finally, using the predicted data to reconstruct the stock index. Generally speaking, ARIMA-ML model is trying to complete prediction on the timing series perspective.
