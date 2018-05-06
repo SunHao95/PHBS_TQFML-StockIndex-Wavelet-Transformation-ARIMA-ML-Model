@@ -21,7 +21,7 @@
  
   
 * ### Prediction Model.
-  * the ARMA-ML(Autoregressive Moving Average and Machine Learning) Model
+ * #### ARMA-ML(Autoregressive Moving Average and Machine Learning) Model
   
   After wavelet transformation, there are two types of stock index data, low-frequency and high-frequency. The ARMA-ML model is trying to  using ARMA method to predict the high-frequency data,the __detail coefficients__, since high-frequency is stationary. While ML methods, such as SVR(Support Vector Regression) and GBR(Gradient Boosting Regression)，are trying to predict the low-frequency data, the __approximation coefficients__. Finally, using the predicted data together to reconstruct the stock index. Generally speaking, ARMA-ML model is trying to complete prediction on the timing series perspective.
  
