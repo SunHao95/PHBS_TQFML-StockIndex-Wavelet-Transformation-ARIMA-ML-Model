@@ -8,13 +8,15 @@
   <div align=center><img width="800" height="300" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/1.png"/></div>
   <div align=center>Figure 1. Filter Bank Scheme for DWT</div>
   
-  In the figure, H,L,and H’,L’ are the high-pass and low-pass filters for wavelet decomposition and reconstruction respectively. In the decomposition phase, the low-pass filter removes the higher frequency components of the signal and highpass filter picks up the remaining parts. Then, the filtered signals are downsampled by two and the results are called __approximation coefficients__ and __detail coefficients__. The reconstruction is just a reversed process of the decomposition and for perfect reconstruction filter banks, we have x = x0. A signal can be further decomposed by cascade algorithm as shown in following equation:
-    \begin{align}
+  In the figure, H,L,and H’,L’ are the high-pass and low-pass filters for wavelet decomposition and reconstruction respectively. In the decomposition phase, the low-pass filter removes the higher frequency components of the signal and highpass filter picks up the remaining parts. Then, the filtered signals are downsampled by two and the results are called __approximation coefficients__ and __detail coefficients__. The reconstruction is just a reversed process of the decomposition and for perfect reconstruction filter banks, we have $x = x_0$. A signal can be further decomposed by cascade algorithm as shown in following equation:
+    $$
+    \begin{aligned}
     \x(t) & = A_1(t)+D_1(t) \\
      & = A_2(t)+D_2(t)+D_1(t) \\ 
      & = A_3(t)+D_3(t)+D_2(t)+D_1(t) \\
      & = A_n(t)+D_n(t)+D_{n-1}(t)+\cdots+D_1(t)  
-    \end{align}
+    \end{aligned}
+    $$
  
   
   <div align=center><img width="400" height="350" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/2.png"/></div>
