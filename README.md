@@ -11,7 +11,7 @@
 
   In the figure, H,L,and H’,L’ are the high-pass and low-pass filters for wavelet decomposition and reconstruction respectively. In the decomposition phase, the low-pass filter removes the higher frequency components of the signal and highpass filter picks up the remaining parts. Then, the filtered signals are downsampled by two and the results are called __approximation coefficients__ and __detail coefficients__. The reconstruction is just a reversed process of the decomposition and for perfect reconstruction filter banks, we have x = x'. A signal can be further decomposed by cascade algorithm as shown in following equation:
 
-<div align=center><img width="600" height="250" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/3.png"/></div>
+<div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/3.png"/></div>
  
   
   <div align=center><img width="400" height="350" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/2.png"/></div>
