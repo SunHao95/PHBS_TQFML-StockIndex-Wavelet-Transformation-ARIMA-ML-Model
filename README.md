@@ -20,13 +20,23 @@
 
  
   
-* Prediction Model.
+* ### Prediction Model.
   * the ARMA-ML(Autoregressive Moving Average and Machine Learning) Model
   
   After wavelet transformation, there are two types of stock index data, low-frequency and high-frequency. The ARMA-ML model is trying to  using ARMA method to predict the high-frequency data,the __detail coefficients__, since high-frequency is stationary. While ML methods, such as SVR(Support Vector Regression) and GBR(Gradient Boosting Regression)，are trying to predict the low-frequency data, the __approximation coefficients__. Finally, using the predicted data together to reconstruct the stock index. Generally speaking, ARMA-ML model is trying to complete prediction on the timing series perspective.
  
- * ### ARMA Model 
+ * #### ARMA Model 
  <div align=center><img src="https://latex.codecogs.com/png.latex?\bg_white&space;Z_{t}&space;=&space;\varphi_{1}Z_{t-1}&plus;\varphi_{2}Z_{t-2}&plus;\cdots&plus;\varphi_{p}Z_{t-p}&plus;a_{t}-\theta&space;_{1}a_{t-1}-\cdots-\theta&space;_{q}a_{t-q}" title="Z_{t} = \varphi_{1}Z_{t-1}+\varphi_{2}Z_{t-2}+\cdots+\varphi_{p}Z_{t-p}+a_{t}-\theta _{1}a_{t-1}-\cdots-\theta _{q}a_{t-q}" /></div>
+
+Finding appropriate values of p and q in the ARMA(p,q) model can be facilitated by plotting the partial autocorrelation functions for an estimate of p, and likewise using the autocorrelation functions for an estimate of q. Further information can be gleaned by considering the same functions for the residuals of a model fitted with an initial selection of p and q.
+Brockwell & Davis recommend using AICc for finding p and q
+
+* #### SVR [](https://en.wikipedia.org/wiki/Support_vector_machine#Regression)
+ Support vector regression (SVR) is a version of SVM for regression. The model produced by support vector classification (as described above) depends only on a subset of the training data, because the cost function for building the model does not care about training points that lie beyond the margin. Analogously, the model produced by SVR depends only on a subset of the training data, because the cost function for building the model ignores any training data close to the model prediction.
+ 
+ * #### GBR [](https://en.wikipedia.org/wiki/Gradient_boosting)
+ Gradient boosting is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees. It builds the model in a stage-wise fashion like other boosting methods do, and it generalizes them by allowing optimization of an arbitrary differentiable loss function.
+
 
 
 
@@ -41,8 +51,10 @@
   * __Time range__: 2010-01-01 to 2018-03-30
   
   
+##  Motivation & References
+Stock index as a time series stired up interests to 
+
   
- ## Arrangement
-* Calculate around 10 technical indicators based on the __OHLC Price__, __Volume__ and __AMT__.
-* Try best to use both models to make predictions. At least use one of them.
-* Try to design a trading strategy based on the stock index prediction result.
+  
+  
+
