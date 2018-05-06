@@ -5,10 +5,11 @@
 * ### Wavelet Transformation
   Stock index data generally has much noise and is non-stationary, which is a huge challenge for us using ML(Machine Learning) methods to  predict the index. However wavelet transformation, an upgraded version of fourier transformation, can serve as a very good filter to decrease the noise in stock index and smooth the data, thus helping us to focus more on the main trend of stock index.
   
-  <div align=center><img width="500" height="300" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/1.png"/></div>
+  <div align=center><img width="700" height="300" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/1.png"/></div>
+  <div align=center>Filter Bank Scheme for DWT</div>
+       
   
-  
-  <div align=center><img width="400" height="500" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/2.png"/></div>
+  <div align=center><img width="400" height="400" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/2.png"/></div>
 
  
   
