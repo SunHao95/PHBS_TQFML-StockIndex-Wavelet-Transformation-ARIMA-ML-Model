@@ -25,16 +25,16 @@
   
   After wavelet transformation, there are two types of stock index data, low-frequency and high-frequency. The ARMA-ML model is trying to  using ARMA method to predict the high-frequency data,the __detail coefficients__, since high-frequency is stationary. While ML methods, such as SVR(Support Vector Regression) and GBR(Gradient Boosting Regression)，are trying to predict the low-frequency data, the __approximation coefficients__. Finally, using the predicted data together to reconstruct the stock index. Generally speaking, ARMA-ML model is trying to complete prediction on the timing series perspective.
  
- * #### ARMA Model 
+ * #### [ARMA](https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model) 
  <div align=center><img src="https://latex.codecogs.com/png.latex?\bg_white&space;Z_{t}&space;=&space;\varphi_{1}Z_{t-1}&plus;\varphi_{2}Z_{t-2}&plus;\cdots&plus;\varphi_{p}Z_{t-p}&plus;a_{t}-\theta&space;_{1}a_{t-1}-\cdots-\theta&space;_{q}a_{t-q}" title="Z_{t} = \varphi_{1}Z_{t-1}+\varphi_{2}Z_{t-2}+\cdots+\varphi_{p}Z_{t-p}+a_{t}-\theta _{1}a_{t-1}-\cdots-\theta _{q}a_{t-q}" /></div>
 
 Finding appropriate values of p and q in the ARMA(p,q) model can be facilitated by plotting the partial autocorrelation functions for an estimate of p, and likewise using the autocorrelation functions for an estimate of q. Further information can be gleaned by considering the same functions for the residuals of a model fitted with an initial selection of p and q.
 Brockwell & Davis recommend using AICc for finding p and q
 
-* #### SVR [Wikipedia](https://en.wikipedia.org/wiki/Support_vector_machine#Regression)
+* #### [SVR](https://en.wikipedia.org/wiki/Support_vector_machine#Regression)
  Support vector regression (SVR) is a version of SVM for regression. The model produced by support vector classification (as described above) depends only on a subset of the training data, because the cost function for building the model does not care about training points that lie beyond the margin. Analogously, the model produced by SVR depends only on a subset of the training data, because the cost function for building the model ignores any training data close to the model prediction.
  
- * #### GBR [Wikipedia](https://en.wikipedia.org/wiki/Gradient_boosting)
+ * #### [GBR](https://en.wikipedia.org/wiki/Gradient_boosting)
  Gradient boosting is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees. It builds the model in a stage-wise fashion like other boosting methods do, and it generalizes them by allowing optimization of an arbitrary differentiable loss function.
 
 
@@ -55,6 +55,15 @@ Brockwell & Davis recommend using AICc for finding p and q
 Stock index, as time series, inspires a lot of research to implement the forecast both in academic area and financial departments. Generally speaking, the main methods used to do prediction are time-series analysis and machine learning models. Some of the research reports and papers have presented good ideas to predict stock index by means of combined_models, such as TS &  ML models. Some even use some data processing methods like Wavelet Transformation to make the data properties more suitable to different predictin models. All the reference papers and research reports have been uploaded in the  [reference](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/tree/master/reference) folder.
 
   
+
+## Conclusion
+ Unfortunately, it seems that none of the model has good prediction power, which indicates that stock prices cannot be predicted exactly!
+ However, the "noisy" data processing methods and time-series analysis model as well as nonlinear machine learning regression model can
+ serve as some useful tools to do further research in other fields.
+* GBR prediction seems as the lag of previous stock prices, just predicting like a martingale.
+* SVR performs badly in the begining of stock index prediction. As time goes by, it tends to predict the average(or expectation) price.
+* The mix GBR/SVR model is just the simple mean of GBR and SVR. Its performance lies between GBR and SVR
+
   
   
 
