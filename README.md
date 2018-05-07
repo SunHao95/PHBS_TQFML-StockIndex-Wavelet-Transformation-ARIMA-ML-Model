@@ -1,6 +1,6 @@
 # PHBS_TQFML-Project
 
-## Stock Index Prediction Based on Wavelet Transformation and ARMA-ML Model or TEA-ML Model
+## Stock Index Prediction Based on Wavelet Transformation and ARMA-ML Model
 
 * ### Wavelet Transformation
   Stock index data generally has much noise and is non-stationary, which is a huge challenge for us using ML(Machine Learning) methods to  predict the index. However wavelet transformation, an upgraded version of fourier transformation, can serve as a very good filter to decrease the noise in stock index and smooth the data, thus helping us to focus more on the main trend of stock index.
@@ -52,7 +52,7 @@ Brockwell & Davis recommend using AICc for finding p and q
   
   
 ##  Motivation & References
-Stock index, as time series, inspires a lot of research to implement the forecast both in academic area and financial departments. Generally speaking, the main methods used to do prediction are time-series analysis and machine learning models. Some of the research reports and papers have presented good ideas to predict stock index by means of combined_models, such as TS &  ML models. Some even use some data processing methods like Wavelet Transformation to make the data properties more suitable to different predictin models. All the reference papers and research reports have been uploaded in the reference folder.
+Stock index, as time series, inspires a lot of research to implement the forecast both in academic area and financial departments. Generally speaking, the main methods used to do prediction are time-series analysis and machine learning models. Some of the research reports and papers have presented good ideas to predict stock index by means of combined_models, such as TS &  ML models. Some even use some data processing methods like Wavelet Transformation to make the data properties more suitable to different predictin models. All the reference papers and research reports have been uploaded in the  [reference](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/tree/master/reference) folder.
 
   
   
