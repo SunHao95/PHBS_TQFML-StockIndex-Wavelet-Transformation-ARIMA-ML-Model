@@ -52,6 +52,10 @@ Brockwell & Davis recommend using AICc for finding p and q
   * __Time range__: 2010-01-01 to 2018-03-30
   
   Use the former 4 days' close price to predict the next day's close price. Using 150-day rolling windown to make prediction. Finally, try to make a prediction of 30-day close price.
+ 
+  [StockIndex-Wavelet-Transformation-ARIMA-ML-Model](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/Project/Final%20Project.ipynb)
+  
+  
   
   
 ##  Motivation & References
