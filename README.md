@@ -50,6 +50,7 @@ Brockwell & Davis recommend using AICc for finding p and q
   * __Volume__: Trading volume
   * __AMT__: Trading amount
   * __Time range__: 2010-01-01 to 2018-03-30
+  
   Use the former 4 days' close price to predict the next day's close price. Using 150-day rolling windown to make prediction. Finally, try to make a prediction of 30-day close price.
   
   
