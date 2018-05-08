@@ -86,7 +86,7 @@ Brockwell & Davis recommend using AICc for finding p and q
 
     
 ##  Motivation & References
-Stock index, as time series, inspires a lot of research to implement the forecast both in academic area and financial departments. Generally speaking, the main methods used to do prediction are time-series analysis and machine learning models. Some of the research reports and papers have presented good ideas to predict stock index by means of combined_models, such as TS &  ML models. Some even use some data processing methods like Wavelet Transformation to make the data properties more suitable to different predictin models. All the reference papers and research reports have been uploaded in the  [reference](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/tree/master/reference) folder.
+<div align=center>Stock index, as time series, inspires a lot of research to implement the forecast both in academic area and financial departments. Generally speaking, the main methods used to do prediction are time-series analysis and machine learning models. Some of the research reports and papers have presented good ideas to predict stock index by means of combined_models, such as TS &  ML models. Some even use some data processing methods like Wavelet Transformation to make the data properties more suitable to different predictin models. All the reference papers and research reports have been uploaded in the  [reference](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/tree/master/reference) folder.</div>
 
   
 
