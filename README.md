@@ -6,16 +6,16 @@
 * ### Wavelet Transformation
   Stock index data generally has much noise and is non-stationary, which is a huge challenge for us using ML(Machine Learning) methods to  predict the index. However wavelet transformation, an upgraded version of fourier transformation, can serve as a very good filter to decrease the noise in stock index and smooth the data, thus helping us to focus more on the main trend of stock index.
   
-  <div align=center><img width="800" height="300" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/1.png"/></div>
+  <div align=center><img width="800" height="300" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/1.png"/></div>
   <div align=center>Figure 1. Filter Bank Scheme for DWT</div>
   
 
   In the figure, H,L,and H’,L’ are the high-pass and low-pass filters for wavelet decomposition and reconstruction respectively. In the decomposition phase, the low-pass filter removes the higher frequency components of the signal and highpass filter picks up the remaining parts. Then, the filtered signals are downsampled by two and the results are called __approximation coefficients__ and __detail coefficients__. The reconstruction is just a reversed process of the decomposition and for perfect reconstruction filter banks, we have x = x'. A signal can be further decomposed by cascade algorithm as shown in following equation:
 
-<div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/3.png"/></div>
+<div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/3.png"/></div>
  
   
-  <div align=center><img width="400" height="350" src="https://github.com/SunHao95/PHBS_TQFML-Stock-Index-Prediction-Based-on-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/2.png"/></div>
+  <div align=center><img width="400" height="350" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/2.png"/></div>
   <div align=center>Figure 2. Wavelet Decomposition Tree</div>
 
 
@@ -52,6 +52,12 @@ Brockwell & Davis recommend using AICc for finding p and q
   * __Time range__: 2010-01-01 to 2018-03-30
   
   Use the former 4 days' close price to predict the next day's close price. Using 150-day rolling windown to make prediction. Finally, try to make a prediction of 30-day close price.
+  
+  ## Result
+  * ### Wavelet Transformation
+  <div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/4.png"/></div>
+  
+  
  
   [StockIndex-Wavelet-Transformation-ARIMA-ML-Model](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/Project/Final%20Project.ipynb)
   
