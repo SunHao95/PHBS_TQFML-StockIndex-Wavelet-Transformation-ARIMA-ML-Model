@@ -1,6 +1,6 @@
 # PHBS_TQFML-Project
 
-# Stock Index Prediction Based on Wavelet Transformation and ARMA-ML
+# [StockIndex Prediction Based on Wavelet Transformation ARIMA-ML Model](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/Project/Final%20Project.ipynb)
 
 ## Methodology
 * ### Wavelet Transformation
@@ -55,17 +55,30 @@ Brockwell & Davis recommend using AICc for finding p and q
   
   ## Result
   * ### Wavelet Transformation
-  <div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/4.png"/></div>
+  <div align=center><img width="500" height="1000" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/4.png"/></div>
+  <div align=center>Figure 3. Approximation&Detail Components of Wavelet Decomposition</div>
+  
+  * ### ARMA
+  <div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/5.png"/></div>
+  <div align=center>Figure 4. ARMA Fit</div>
+  
+  * ### GBR Prediction
+  <div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/6.png"/></div>
+  <div align=center>Figure 5. GBR Prediction</div>
+  
+  * ### SVR Prediction
+  <div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/7.png"/></div>
+  <div align=center>Figure 6. SVR Prediction</div>
   
   
- 
-  [StockIndex-Wavelet-Transformation-ARIMA-ML-Model](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/Project/Final%20Project.ipynb)
+  * ### SVR_GBR Prediction
+  <div align=center><img width="500" height="150" src="https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/blob/master/images/8.png"/></div>
+  <div align=center>Figure 7. SVR_GBR Prediction Prediction</div>
   
-  
-  
-  
-  
-  
+  * ### Evaluation
+  Use common regression matrices to evaluate the results. 
+   
+    
 ##  Motivation & References
 Stock index, as time series, inspires a lot of research to implement the forecast both in academic area and financial departments. Generally speaking, the main methods used to do prediction are time-series analysis and machine learning models. Some of the research reports and papers have presented good ideas to predict stock index by means of combined_models, such as TS &  ML models. Some even use some data processing methods like Wavelet Transformation to make the data properties more suitable to different predictin models. All the reference papers and research reports have been uploaded in the  [reference](https://github.com/SunHao95/PHBS_TQFML-StockIndex-Wavelet-Transformation-ARIMA-ML-Model/tree/master/reference) folder.
 
