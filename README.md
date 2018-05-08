@@ -76,7 +76,8 @@ Brockwell & Davis recommend using AICc for finding p and q
   <div align=center>Figure 7. SVR_GBR Prediction Prediction</div>
   
   * ### Evaluation
-  Use common regression matrices([explained_variance](https://en.wikipedia.org/wiki/Explained_variation), [mean_absolute_error](https://en.wikipedia.org/wiki/Mean_absolute_error), [mean_squared_error](https://en.wikipedia.org/wiki/Mean_squared_error), [r2_score](https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2)to evaluate the results. 
+  Use common regression matrices([explained_variance](https://en.wikipedia.org/wiki/Explained_variation), [mean_absolute_error](https://en.wikipedia.org/wiki/Mean_absolute_error), [mean_squared_error](https://en.wikipedia.org/wiki/Mean_squared_error), [r2_score](https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2))to evaluate the results. 
+  
 |       Model |       ev | 	     mae| 	      mse|        r2|
 |:------------|---------:|---------:|-----------:|---------:| 
 |GBR_Model 	  |  0.084507| 30.393337|	1426.833774|	0.046767|
