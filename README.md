@@ -91,7 +91,7 @@ Stock index, as time series, inspires a lot of research to implement the forecas
   
 
 ## Conclusion
-Unfortunately, it seems that none of the model has good prediction power, because the ev and r2 are so small and even negative, which indicate that stock prices cannot be predicted exactly! However, the "noisy" data processing methods and time-series analysis model as        well as nonlinear machine learning regression model can serve as some useful tools to do further research in other fields.
+Unfortunately, it seems that none of the model has good prediction power, because the __ev__ and __r2__ are so small and even negative, which indicate that stock prices cannot be predicted exactly! However, the "noisy" data processing methods and time-series analysis model as        well as nonlinear machine learning regression model can serve as some useful tools to do further research in other fields.
 * GBR prediction seems as the lag of previous stock prices, just predicting like a martingale.
 * SVR performs badly in the begining of stock index prediction. As time goes by, it tends to predict the average(or expectation) price.
 * The mix GBR/SVR model is just the simple mean of GBR and SVR. Its performance lies between GBR and SVR
